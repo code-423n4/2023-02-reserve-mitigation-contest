@@ -1,5 +1,5 @@
 # Sponsorname - Mitigation contest details
-- Total Prize Pool: $50,000
+- Total Prize Pool: $50,000 USDC
 - [Warden guidelines for C4 mitigation reviews](https://code4rena.notion.site/Guidelines-for-Versus-mitigation-reviews-ed10fc5cfbf640bd8dcec66f38b343c4)
 - Submit findings [using the C4 form](https://code4rena.com/contests/YYYY-MM-sponsorName-mitigation-contest/submit)
 - Starts February 10, 2023 20:00 UTC
