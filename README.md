@@ -9,19 +9,24 @@
 
 Each warden must submit a mitigation review for *every High and Medium finding* from the parent contest. **Incomplete mitigation reviews will not be eligible for awards.**
 
-[ ⭐️ SPONSORS ADD INFO HERE ]
-
 ## Findings being mitigated
 
-Mitigations of all High and Medium issues will be considered in-scope and listed here.
+[ ⭐️ C4 STAFF TODO: ADD LIST OF HIGH AND MEDIUM ISSUES HERE ]
+[ Scope for this contest: 2 Highs; 25 Medium - TBC ]
+
+Mitigations of all High and Medium issues will be considered in-scope and listed here, e.g.:
 
 - [H-01: Title](link to Github issue)
 
 ## Overview of changes
 
+[ ⭐️ SPONSOR TEAM TODO ]
+
 Please provide context about the mitigations that were applied if applicable and identify any areas of specific concern.
 
 ## Mitigations to be reviewed
+
+[ ⭐️ SPONSOR TEAM TODO ]
 
 Wherever possible, mitigations should be provided in separate pull requests, one per issue. If that is not possible (e.g. because several audit findings stem from the same core problem), then please link the PR to all relevant issues in your findings repo. 
 
