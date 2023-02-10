@@ -11,12 +11,38 @@ Each warden must submit a mitigation review for *every High and Medium finding* 
 
 ## Findings being mitigated
 
-[ ⭐️ C4 STAFF TODO: ADD LIST OF HIGH AND MEDIUM ISSUES HERE ]
-[ Scope for this contest: 2 Highs; 25 Medium - TBC ]
+### High Risk Findings
 
-Mitigations of all High and Medium issues will be considered in-scope and listed here, e.g.:
+- [H-01: Adversary can abuse a quirk of compound redemption to manipulate the underlying exchange rate and maliciously disable cToken collaterals](https://github.com/code-423n4/2023-01-reserve-findings/issues/310)
+- [H-02: Basket range formula is inefficient, leading the protocol to unnecessary haircut](https://github.com/code-423n4/2023-01-reserve-findings/issues/235)
 
-- [H-01: Title](link to Github issue)
+### Medium Risk Findings
+
+- [M-01: Battery discharge mechanism doesn't work correctly for first redemption](https://github.com/code-423n4/2023-01-reserve-findings/issues/452)
+- [M-02: attacker can make stakeRate to be 1 in the StRSR contract and users depositing tokens can lose funds because of the big rounding error](https://github.com/code-423n4/2023-01-reserve-findings/issues/439)
+- [M-03: Baited by redemption during undercollateralization (no issuance, just transfer)](https://github.com/code-423n4/2023-01-reserve-findings/issues/416)
+- [M-04: Redemptions during undercollateralization can be hot-swapped to steal all funds)](https://github.com/code-423n4/2023-01-reserve-findings/issues/399)
+- [M-05: early user can call issue() and then melt() to increase basketsNeeded to supply ratio to its maximum value and then melt() won't work and contract contract features like issue() won't work](https://github.com/code-423n4/2023-01-reserve-findings/issues/384)
+- [M-06: Too few rewards paid over periods in Furnace and StRSR](https://github.com/code-423n4/2023-01-reserve-findings/issues/377)
+- [M-07: attacker can steal RToken holders funds by performing reentrancy attack during redeem() function token transfers](https://github.com/code-423n4/2023-01-reserve-findings/issues/347)
+- [M-08: Asset.lotPrice() doesn't use the most recent price in case of oracle timeout](https://github.com/code-423n4/2023-01-reserve-findings/issues/326)
+- [M-09: Withdrawals will stuck](https://github.com/code-423n4/2023-01-reserve-findings/issues/325)
+- [M-10: Unsafe downcasting in issue(...) can be exploited to cause permanent DoS](https://github.com/code-423n4/2023-01-reserve-findings/issues/320)
+- [M-11: Should Accrue Before Change, Loss of Rewards in case of change of settings](https://github.com/code-423n4/2023-01-reserve-findings/issues/287)
+- [M-12: BackingManager: rsr is distributed across all rsr revenue destinations which is a loss for rsr stakers](https://github.com/code-423n4/2023-01-reserve-findings/issues/276)
+- [M-13: attacker can prevent vesting for a very long time](https://github.com/code-423n4/2023-01-reserve-findings/issues/267)
+- [M-14: Unsafe cast of uint8 datatype to int8](https://github.com/code-423n4/2023-01-reserve-findings/issues/265)
+- [M-15: The Furnace#melt() is vulnerable to sandwich attacks](https://github.com/code-423n4/2023-01-reserve-findings/issues/258)
+- [M-16: RToken permanently insolvent/unusable if a single collateral in the basket behaves unexpectedly](https://github.com/code-423n4/2023-01-reserve-findings/issues/254)
+- [M-17: refresh() will revert on Oracle deprecation, effectively disabling part of the protocol](https://github.com/code-423n4/2023-01-reserve-findings/issues/234)
+- [M-18: If name is changed then the domain seperator would be wrong.](https://github.com/code-423n4/2023-01-reserve-findings/issues/211)
+- [M-19: In case that unstakingDelay is decreased, users who have previously unstaked would have to wait more than unstakingDelay for new unstakes](https://github.com/code-423n4/2023-01-reserve-findings/issues/210)
+- [M-20: Shortfall might be calculated incorrectly if a price value for one collateral isn't fetched correctly](https://github.com/code-423n4/2023-01-reserve-findings/issues/200)
+- [M-21: Loss of staking yield for stakers when another user stakes in pause/frozen state](https://github.com/code-423n4/2023-01-reserve-findings/issues/148)
+- [M-22: RecollateralizationLib: Dust loss for an asset should be capped at its low value](https://github.com/code-423n4/2023-01-reserve-findings/issues/106)
+- [M-23: StRSR: seizeRSR function fails to update rsrRewardsAtLastPayout variable](https://github.com/code-423n4/2023-01-reserve-findings/issues/64)
+- [M-24: BasketHandler: Users might not be able to redeem their rToken when protocol is paused due to refreshBasket function](https://github.com/code-423n4/2023-01-reserve-findings/issues/39)
+- [M-25: BackingManager: rTokens might not be redeemable when protocol is paused due to missing token allowance](https://github.com/code-423n4/2023-01-reserve-findings/issues/16)
 
 ## Overview of changes
 
