@@ -1,5 +1,5 @@
 # Reserve - Mitigation contest details
-- Total Prize Pool: $30,000 USDC
+- Total Prize Pool: $45,000 USDC
 - [Warden guidelines for C4 mitigation reviews](https://code4rena.notion.site/Guidelines-for-Versus-mitigation-reviews-ed10fc5cfbf640bd8dcec66f38b343c4)
 - Submit findings [using the C4 form](https://code4rena.com/contests/2023-02-reserve-versus-mitigation-contest/submit)
 - Starts February 13, 2023 20:00 UTC
